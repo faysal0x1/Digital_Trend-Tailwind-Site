@@ -1,14 +1,15 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
     content: ['./*.html'],
-    darkMode: 'class', // or 'media' or 'class'
+    darkMode: 'media', // or 'media' or 'class'
     theme: {
         extend: {
             colors: {
                 //add your own color
                 //https://tailwindcss.com/docs/customizing-colors
                 primary: "#0C8195",
-                hero: "#057A8D"
+                hero: "#057A8D",
+                featured: "#F0F8FF"
             },
             container: {
                 center: true,
@@ -23,5 +24,5 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [require("daisyui")],
 }
